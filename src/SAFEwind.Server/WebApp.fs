@@ -7,7 +7,7 @@ open SAFEwind.Shared.API
 open FSharp.Control.Tasks
 
 let service = {
-    GetMessage = fun _ -> task { return "Nobody likes gahbage" } |> Async.AwaitTask
+    GetMessage = fun _ -> task { return "Hello from Server!" } |> Async.AwaitTask
 }
 
 let webApp : HttpHandler =
