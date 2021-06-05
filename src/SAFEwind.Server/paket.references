@@ -1,0 +1,10 @@
+FSharp.Control.AsyncSeq
+Microsoft.ApplicationInsights.AspNetCore
+Giraffe
+Fable.Remoting.Giraffe
+Fable.SignalR.AspNetCore
+Microsoft.AspNetCore.SignalR.Protocols.MessagePack
+FsToolkit.ErrorHandling.TaskResult
+Thoth.Json.Net
+System.Data.Sqlite
+Thoth.Json.Giraffe

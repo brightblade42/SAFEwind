@@ -1,0 +1,20 @@
+{
+    "author": "Ryan Lee Martin",
+    "classifications": [
+
+         "Web",
+         "Giraffe",
+         "Fable",
+         "Elmish",
+         "Tailwind"
+
+    ],
+    "name": "SAFEwind Web App v0.9",
+    "tags": {
+        "language": "F#",
+        "type": "project"
+    },
+    "identity": "SAFEwind.Template",
+    "shortName": "safewind",
+    "sourceName": "SAFEwind"
+}
