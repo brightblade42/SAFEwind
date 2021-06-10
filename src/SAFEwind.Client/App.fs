@@ -3,5 +3,6 @@ module SAFEwind.Client.App
 open Feliz
 open Browser.Dom
 
-
-View.AppView
+[<ReactComponent>]
+let App () =
+    View.AppView ()
