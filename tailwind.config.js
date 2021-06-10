@@ -4,7 +4,7 @@ module.exports = {
   purge: [
     "src/SAFEwind.Client/public/**/*.html",
     "src/SAFEwind.Client/src/**/*.{js,jsx,ts,tsx,vue}"
-  ], //we gotta come back to this. tailwind css gets a biig.
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {

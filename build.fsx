@@ -45,7 +45,6 @@ let clientSrcPath = srcPath </> "SAFEwind.Client"
 let serverSrcPath = srcPath </> "SAFEwind.Server"
 let sharedSrcPath = srcPath </> "SAFEwind.Shared"
 let appPublishPath = publishPath </> "app"
-//let fableBuildPath = clientSrcPath </> ".fable-build"
 let fableBuildPath = clientSrcPath </> "src/bin"
 
 // Targets
