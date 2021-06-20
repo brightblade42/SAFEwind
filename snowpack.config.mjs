@@ -15,6 +15,7 @@ export default  {
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-dotenv',
     '@snowpack/plugin-postcss',
+    '@snowpack/plugin-typescript',
     '@jadex/snowpack-plugin-tailwindcss-jit' //temp fix for spack/jit issue
   ],
   packageOptions: {

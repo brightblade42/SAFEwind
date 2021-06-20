@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import { App } from './bin/App.js'; //fable land
+import { App } from './bin/App'; //fable land
 
 function Root () {
     return (

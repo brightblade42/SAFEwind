@@ -10,9 +10,15 @@
         <Compile Include="Pages\Index.fs" />
         <Compile Include="View.fs" />
         <Compile Include="App.fs" />
+        <Content Include="src\index.tsx" />
+        <Content Include="src\index.css" />
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="..\SAFEwind.Shared\SAFEwind.Shared.fsproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="src\bin" />
+      <Content Include="public\index.html" />
     </ItemGroup>
     <Import Project="..\..\.paket\Paket.Restore.targets" />
 </Project>
