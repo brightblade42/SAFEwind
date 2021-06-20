@@ -6,10 +6,11 @@
          "Giraffe",
          "Fable",
          "Elmish",
-         "Tailwind"
+         "Tailwind",
+         "Typescript"
 
     ],
-    "name": "SAFEwind Web App v0.9",
+    "name": "SAFEwind Web App v0.9.1",
     "tags": {
         "language": "F#",
         "type": "project"
