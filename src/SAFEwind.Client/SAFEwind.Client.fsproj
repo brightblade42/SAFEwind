@@ -8,8 +8,7 @@
         <Compile Include="Router.fs" />
         <Compile Include="AppState.fs" />
         <Compile Include="Components.fs" />
-        <Compile Include="Pages\HomePage.fs" />
-        <Compile Include="Pages\AboutPage.fs" />
+        <Compile Include="Pages.fs" />
         <Compile Include="App.fs" />
         <Content Include="src\appbar.tsx" />
         <Content Include="src\index.tsx" />

@@ -14,8 +14,8 @@ let AppView (props: {| model: Model; dispatch:Dispatch<Msg>; |}) =
 
     let render =
         match props.model.CurrentPage with
-        | Page.Index -> Pages.Index.HomePage ()
-        | Page.About -> Pages.About.AboutPage ()
+        | Page.Index -> Pages.HomePage ()
+        | Page.About -> Pages.AboutPage ()
 
     React.router [
         router.pathMode
