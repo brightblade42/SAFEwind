@@ -1,50 +1,31 @@
 module SAFEwind.Client.App
 
 open Feliz
-open Browser.Dom
-
-open Feliz
 open Elmish
 open Feliz.UseElmish
 open Router
-
-type Model = {
-    Count: int
-}
-
-type Msg = | GetCount
-let init () = { Count = 0 }, Cmd.none
-let update (msg:Msg) (model:Model) : Model * Cmd<Msg> =
-    match msg with
-    | GetCount -> { model with Count = 1; }, Cmd.none
+open AppState
 
 [<ReactComponent>]
-let AppView () =
-    let page,setPage = React.useState(Router.currentPath() |> Page.parseFromUrlSegments)
-    let model,disp = React.useElmish(init, update, [|  |])
-    // routing for full refreshed page (to fix wrong urls)
-    React.useEffectOnce (fun _ -> Router.navigatePage page)
+let AppView (props: {| model: Model; dispatch:Dispatch<Msg>; |}) =
 
     let navigation =
-        Html.div [
-            prop.className [ "bg-bgray-500"]
-            prop.children [
-                Html.a("Home", Page.Index)
-                Html.span " | "
-                Html.a("About", Page.About)
-            ]
-        ]
+         Components.AppBar {| model=props.model; dispatch=props.dispatch |}
+
     let render =
-        match page with
-        | Page.Index -> Pages.Index.IndexView ()
-        | Page.About -> Html.text "SAFEr Template"
+        match props.model.CurrentPage with
+        | Page.Index -> Pages.Index.HomePage ()
+        | Page.About -> Pages.About.AboutPage ()
+
     React.router [
         router.pathMode
-        router.onUrlChanged (Page.parseFromUrlSegments >> setPage)
+        router.onUrlChanged (Page.parseFromUrlSegments >> UrlChanged >> props.dispatch)
         router.children [ navigation; render ]
     ]
 
 
 [<ReactComponent>]
 let App () =
-    AppView ()
+
+    let model,dispatch = React.useElmish(init, update, [|  |])
+    AppView {| model=model; dispatch=dispatch |}
