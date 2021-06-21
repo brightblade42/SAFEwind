@@ -5,7 +5,7 @@ open Feliz.UseDeferred
 open SAFEwind.Client
 
 [<ReactComponent>]
-let IndexView () =
+let HomePage () =
     let callReq,setCallReq = React.useState(Deferred.HasNotStartedYet)
     let call = React.useDeferredCallback((fun _ -> Server.service.GetMessage()), setCallReq)
     let title =

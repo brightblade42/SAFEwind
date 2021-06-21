@@ -1,4 +1,4 @@
-module SAFEwind.Client.Pages.AboutPage
+module SAFEwind.Client.Pages.About
 
 open Feliz
 
