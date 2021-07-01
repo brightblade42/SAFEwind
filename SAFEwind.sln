@@ -16,6 +16,7 @@ ProjectSection(SolutionItems) = preProject
 	src\SAFEwind.Client\paket.references = src\SAFEwind.Client\paket.references
 	tsconfig.json = tsconfig.json
 	package.json = package.json
+	snowplug1.js = snowplug1.js
 EndProjectSection
 EndProject
 Global
